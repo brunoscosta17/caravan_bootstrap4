@@ -9,6 +9,41 @@
 </head>
 <body>
 
+    <!-- Modal Login -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Entre na sua conta</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="loginEmail">Email</label>
+                      <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Insira o email">
+                    </div>
+                    <div class="form-group">
+                      <label for="loginPassword">Password</label>
+                      <input type="password" class="form-control" id="loginPassword" placeholder="Insira a senha">
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar na conta</button>
+                    <small class="form-text text-muted">Esqueceu a senha? <a href="#">Clique aqui.</a></small>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fim Modal Login -->
+
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light py-3 box-shadow">
 
         <a href="index.html" class="navbar-brand">
@@ -36,7 +71,7 @@
                     <a class="nav-link" href="contato.html">Contato</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
                 </li>
                 <li class="nav-item active">
                     <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
@@ -279,9 +314,9 @@
                 <div class="col-md-3 col-6">
                     <h4 class="h6">LOCAIS</h4>
                     <ul class="list-unstyled">
-                        <li><a href="california.html">Planos</a></li>
-                        <li><a href="paris.html">Contato</a></li>
-                        <li><a href="dublin.html">Inscrição</a></li>
+                        <li><a href="california.html">Califórnia	</a></li>
+                        <li><a href="paris.html">Paris</a></li>
+                        <li><a href="dublin.html">Dublin</a></li>
                     </ul>
                 </div>
 
